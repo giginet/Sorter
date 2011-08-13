@@ -1,7 +1,31 @@
 # 
 # Sorter.pm
 # created by giginet on 2011/8/14
-# 
+#
+=head1 Module Name
+
+Sorter.pm
+
+=head1 Description
+
+This module will sort an array by 'Quick Sort'.
+
+=head1 Usage
+
+my $sorter = Sorter->new; 
+
+$sorter->set_values(5,4,3,2,1); 
+
+$sorter->sort;
+
+$sorter->get_values # (1,2,3,4,5)
+
+=head1 Author
+
+giginet
+
+=cut
+
 package Sorter;
 use strict;
 use warnings;
