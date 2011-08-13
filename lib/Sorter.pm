@@ -10,8 +10,8 @@ sub new{
   my $class = shift;
   my $self = {
     values => \@_,
-};
-return bless $self, $class;
+  };
+  return bless $self, $class;
 }
 
 sub set_values{
@@ -27,8 +27,7 @@ sub get_values{
 sub sort{
   my $self = shift;
   my @values = $self->get_values;
-  my $length = @values;
-  $self->_quick_sort(0, $length-1);
+  $self->_quick_sort(0, $#values);
 }
 
 sub _quick_sort(){
